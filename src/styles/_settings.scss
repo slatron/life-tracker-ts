@@ -1,0 +1,86 @@
+// Site wrapper
+$wrapper-width: 1600px;
+
+// header Height
+$header-height: 44px;
+
+// Z-Index Layers
+$layer-main-body: 1;
+$layer-top-elements: 1000;
+
+// Drawer Settings:
+$drawer-width: 175px;
+$drawer-max-height: 500px;
+
+$transtion-drawer: all 0.3s ease-in-out;
+
+// =========== Breakpoint mixins
+@mixin breakpoint($point) {
+  @if $point == laptop {
+    @media (min-width: 1240px) { @content ; }
+  }
+  @else if $point == tablet {
+    @media (min-width: 768px) { @content ; }
+  }
+}
+
+// =========== Site Colors
+
+// Chromes
+$color-black: #222;
+$color-white: #fff;
+$color-ltgrey: #f0eeee;
+$color-dkgrey: #363636;
+$color-ltltgrey: #fbf9f9;
+$color-medgrey: #a1a1a1;
+$color-newspaper: #ebe6e6;
+
+// blues
+$color-royal: #1484C8;
+$color-gold: #edc721;
+$color-pool: #83c1bf;
+$color-agua: #eef6f6;
+$color-dkdkblue: #001325;
+$color-soft-blue: #d7ebf3;
+$color-bright-blue: #93d8fd;
+
+// reds
+$color-red: #c00;
+$color-caution: #fff9e6;
+$color-soft-warning: #E0FFD7;
+$color-soft-red: #F1C8C8;
+$color-warning: #c00;
+$color-soft-pink: #e4afba;
+
+// yellows
+$color-soft-gold: #FFEB93;
+$color-bright-yellow: #f1d96e;
+$color-dirty-yellow: #ffc;
+$color-soft-yellow: #f3e9bd;
+
+// green
+$color-green: #009966;
+$color-soft-green: #b1eab2;
+$color-bright-green: #6ff373;
+
+// other
+$color-soft-purple: #c7beda;
+$color-soft-brown: #f3c28c;
+$color-soft-gray: #b1aca7;
+
+$brand-color: #0b9afb;
+
+// Used for generating paddings / margins
+$base-unit: 1rem;
+$base-unit-half: $base-unit * 0.5;
+$base-unit-quarter: $base-unit * 0.25;
+
+// Fonts
+$base-font-family: sans-serif;
+$base-font-family-bold: "Gill Sans Extrabold", sans-serif;
+$base-font-family-italic: sans-serif;
+$base-font-family-bold-italic: "Gill Sans Extrabold", sans-serif;
+
+$base-font-size: 16px;
+$base-content-font: $base-font-size * 0.875;
+$base-rounded-corners: 3px;
